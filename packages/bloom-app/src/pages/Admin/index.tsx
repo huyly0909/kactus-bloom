@@ -1,7 +1,15 @@
 import { type FC } from 'react';
 import { Outlet, useNavigate, useLocation } from 'react-router-dom';
 import { Button } from '@mantine/core';
-import { Users, FolderCog, Shield, ArrowLeft } from 'lucide-react';
+import {
+  Users,
+  FolderCog,
+  Shield,
+  ArrowLeft,
+  Building2,
+  BarChart3,
+  TrendingUp,
+} from 'lucide-react';
 import { AppLayout } from '@kactus-bloom/ui';
 import { useAuth } from '@kactus-bloom/ui/hooks';
 import { useProjectStore } from '@kactus-bloom/ui/stores';
@@ -12,6 +20,14 @@ const adminSections = [
       { label: 'Users', icon: <Users size={18} />, href: '/admin/users' },
       { label: 'Projects', icon: <FolderCog size={18} />, href: '/admin/projects' },
       { label: 'Authorization', icon: <Shield size={18} />, href: '/admin/authorization' },
+    ],
+  },
+  {
+    label: 'Data',
+    items: [
+      { label: 'Companies', icon: <Building2 size={18} />, href: '/admin/companies' },
+      { label: 'Finance', icon: <BarChart3 size={18} />, href: '/admin/finance' },
+      { label: 'Stocks', icon: <TrendingUp size={18} />, href: '/admin/stocks' },
     ],
   },
 ];
