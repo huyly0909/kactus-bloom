@@ -11,6 +11,9 @@ import { AdminLayout } from '../pages/Admin';
 import { AdminUsersPage } from '../pages/Admin/Users';
 import { AdminProjectsPage } from '../pages/Admin/Projects';
 import { AdminAuthorizationPage } from '../pages/Admin/Authorization';
+import { AdminCompaniesPage } from '../pages/Admin/Companies';
+import { AdminFinancePage } from '../pages/Admin/Finance';
+import { AdminStocksPage } from '../pages/Admin/Stocks';
 import { AuthGuard } from './guards';
 import { AdminGuard } from './adminGuard';
 import { ProjectGuard } from './projectGuard';
@@ -32,6 +35,9 @@ export const AppRouter: FC = () => {
             <Route path="/admin/users" element={<AdminUsersPage />} />
             <Route path="/admin/projects" element={<AdminProjectsPage />} />
             <Route path="/admin/authorization" element={<AdminAuthorizationPage />} />
+            <Route path="/admin/companies" element={<AdminCompaniesPage />} />
+            <Route path="/admin/finance" element={<AdminFinancePage />} />
+            <Route path="/admin/stocks" element={<AdminStocksPage />} />
           </Route>
         </Route>
 
